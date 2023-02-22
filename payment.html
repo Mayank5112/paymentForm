@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style/payment.css">
+        <title>Document</title>
+    </head>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Amber sales</span>
+        </div>
+    </nav>
+
+    <body>
+        <div class="container main">
+            <h2>Payment</h2>
+            <hr>
+            <form>
+                <div class="payment">
+                    <div class="online-section">
+                        <input id="onlin-checkbox" class="form-check-input" type="radio" onchange="display()">
+                        <label class="form-check-label" for="">Online</label>
+                        <div class="online-detail" id="online-detail" style="display: none;">
+                            <div class="mb-3">
+                                <label>Card Number</label>
+                                <input class="form-control card-number" type="text" name="name"
+                                    placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="16">
+                            </div>
+                            <div class="mb-3 validity">
+                                <label for="">Valid thru</label>
+                                <br>
+                                <select class="form-select month">
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                                <select class="form-select year">
+                                    <option>23</option>
+                                    <option>24</option>
+                                    <option>25</option>
+                                    <option>26</option>
+                                    <option>27</option>
+                                    <option>28</option>
+                                    <option>29</option>
+                                    <option>30</option>
+                                    <option>31</option>
+                                    <option>32</option>
+                                    <option>33</option>
+                                    <option>34</option>
+                                </select>
+                                <input class="CVV form-control" type="text" name="name" class="form-control"
+                                    placeholder="CVV" maxlength="3">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cash-section">
+                        <input class="form-check-input" id="cash" type="radio" onclick="display2()">
+                        <label for="">COD (cash on delivery)</label>
+                    </div>
+                </div>
+                <button id="pay" type="button" class="btn btn-primary" onclick="purchase()">Purchase</button>
+            </form>
+        </div>
+        <div><span id="payment-message" style="display:none;">something</span></div>
+    </body>
+    <footer>
+
+    </footer>
+
+    <script>
+        const onlineDetail = document.getElementById("online-detail")
+        const cash = document.getElementById("cash")
+        const onlineCheckbox = document.getElementById("onlin-checkbox")
+        const message = document.getElementById("payment-message")
+        function display() {
+            onlineDetail.style.display = "block"
+            cash.checked = false
+        }
+        function display2() {
+            onlineDetail.style.display = "none"
+            onlineCheckbox.checked = false
+        }
+        function purchase() {
+            let random = Math.floor(Math.random() * 6) + 1
+            if (cash.checked === false && onlineCheckbox.checked === false) {
+                alert("chooose a payment option")
+            }
+            else if (cash.checked === true) {
+                message.style.display = "block"
+                message.classList.add("success")
+                message.innerText = "purchase successfull"
+            }
+            else if (onlineCheckbox.checked === true && random <= 3) {
+                message.style.display = "block"
+                message.classList.add("success")
+                message.innerText = "purchase successfull"
+            }
+            else {
+                message.style.display = "block"
+                message.classList.add("fail")
+                message.innerText = "Purchase insuccessful"
+            }
+        }
+    </script>
+
+</html>

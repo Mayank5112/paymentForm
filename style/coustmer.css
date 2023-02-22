@@ -1,0 +1,15 @@
+.main {
+	padding: 20px;
+	margin-top: 2rem;
+	border: 1px solid #f8f9fa;
+	width: 70%;
+	box-shadow: 0px 0px 30px 1px rgba(167, 167, 167, 0.5);
+}
+.form-label {
+	font-size: large;
+	font-weight: 400;
+}
+footer {
+	height: 100px;
+	width: 100%;
+}

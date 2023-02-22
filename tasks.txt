@@ -1,0 +1,33 @@
+
+
+Q1) What do you think are the most important aspects of a webpage and why?
+	
+	There are several important aspects of a web page, but some key aspects are :
+		
+		- User experience: a webpage should be easy to navigate and visually appealing to the user. 
+		
+		- Responsiveness:  a webpage should be responsive to adapt and present the information to the user on any screen as the internet is accessible through multiple devices with different screen sizes.
+		
+		- Content: only the most relevant and important information should be available to the user, information can be presented in different forms such as images and graphs.
+
+Q2) What mistakes have you made as a back-end developer and how have you worked to fix them?
+
+			
+
+Q3) Do you like working alone or as part of a team?
+	
+	I like working in teams is the ability to break down large projects into smaller, more manageable parts, it also allows you to find different approaches to a  single problem as you will have team members to discuss it with.
+	
+Q4) Create and deploy a simple form for making payments for rental orders. The form is divided into 3 sections which are as follows. 
+
+(*) Order summary section (Product name, price, order ID, date)
+
+(*) The customer details section will have input by the user ( Name, number, email, address).
+
+(*) Payment Section (Dummy procedure for online and COD payments with success or failure message)
+
+The form should include these fields.
+
+It should be step by step form where first you see the order details, click next and you get to a section where you input your details and then finally a dummy payment procedure which a success or failure message.
+
+Bonus: In the “Customer Details” section include an option to accept the terms and conditions for rental.
