@@ -2,7 +2,7 @@
 
 Q1) What do you think are the most important aspects of a webpage and why?
 	
-	There are several important aspects of a web page, but some key aspects are :
+Ans 1)There are several important aspects of a web page, but some key aspects are :
 		
 		- User experience: a webpage should be easy to navigate and visually appealing to the user. 
 		
@@ -12,11 +12,11 @@ Q1) What do you think are the most important aspects of a webpage and why?
 
 Q2) What mistakes have you made as a back-end developer and how have you worked to fix them?
 
-			
+Ans 2)While working with MongoDB, there are multiple ways to fetch data and perform CRUD operations which made my code hard to read and inconsistent, but with good coding practice and with the help of my peers I was able to overcome that problem.
 
 Q3) Do you like working alone or as part of a team?
 	
-	I like working in teams is the ability to break down large projects into smaller, more manageable parts, it also allows you to find different approaches to a  single problem as you will have team members to discuss it with.
+ans 3)I like working in teams is the ability to break down large projects into smaller, more manageable parts, it also allows you to find different approaches to a  single problem as you will have team members to discuss it with.
 	
 Q4) Create and deploy a simple form for making payments for rental orders. The form is divided into 3 sections which are as follows. 
 
